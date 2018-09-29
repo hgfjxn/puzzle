@@ -11,12 +11,12 @@ public class Outer {
 
 
     //此处去掉构造函数即可符合预期；如果构造函数存在会造成user 和message的值一样。
-//    public Outer(Inner user, Inner message) {
-//        this.user = user;
-//        this.message = message;
-//
-//        System.out.println(System.nanoTime() + " constructor: " + user + "," + message);
-//    }
+    public Outer(Inner user, Inner message) {
+        this.user = user;
+        this.message = message;
+
+        System.out.println(System.nanoTime() + " constructor: " + user + "," + message);
+    }
 
     public Inner getUser() {
         return user;
